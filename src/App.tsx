@@ -59,9 +59,6 @@ function App() {
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-fade-in">
               I'm a Systems Engineering student with experience in web development, especially using HTML, CSS, and JavaScript. I enjoy creating accessible, functional, and well-designed websites. I'm passionate about learning new technologies, collaborating in teams, and solving problems creatively.
             </p>
-            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-fade-in">
-              My interest in astronomy goes back many years, and today, computer vision represents a new frontier that inspires me to explore how technology can see and understand the world.
-            </p>
             <div className="flex justify-center space-x-6 animate-bounce-in">
               <a
                 href="https://github.com/Charlsz"
@@ -106,7 +103,7 @@ function App() {
                 
                 <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                   <h4 className="text-xl font-semibold text-gray-800 dark:text-white">HRG SOLUCIONES S.A.S</h4>
-                  <p className="text-gray-600 dark:text-gray-400">FullStack Developer</p>
+                  <p className="text-gray-600 dark:text-gray-400">Web Developer</p>
                   <p className="text-gray-500 dark:text-gray-500">Cartagena de Indias, Colombia | January 2024–December 2024</p>
                   <ul className="list-disc list-inside mt-4 text-gray-600 dark:text-gray-400">
                     <li className="transform transition hover:translate-x-2">Design, development, and maintenance of responsive and functional websites</li>
