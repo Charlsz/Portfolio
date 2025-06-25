@@ -157,57 +157,75 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               
               {/* Tera Studios Project */}
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Tera Studios</h3>
-                  <a
-                    href="https://terastudios.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                  </a>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src="/{7BC4F869-FFB6-450B-BF17-083A6463A165}.png" 
+                    alt="Tera Studios Website Screenshot"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  Tera Studios company website featuring modern design and professional presentation.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                    Web Development
-                  </span>
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
-                    Company Website
-                  </span>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Tera Studios</h3>
+                    <a
+                      href="https://terastudios.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    Tera Studios company website featuring modern design and professional presentation.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+                      Web Development
+                    </span>
+                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
+                      Company Website
+                    </span>
+                  </div>
                 </div>
               </div>
 
               {/* SimpleOS Project */}
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">SimpleOS</h3>
-                  <a
-                    href="https://simpleoscharlsz.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                  </a>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src="/{0BF25356-28BA-45AE-BB5B-96181DF2CDAA}.png" 
+                    alt="SimpleOS Terminal Simulator Screenshot"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  A web-based terminal simulator using React + TypeScript, supporting basic system commands.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">
-                    React
-                  </span>
-                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
-                    TypeScript
-                  </span>
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
-                    Terminal Simulator
-                  </span>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">SimpleOS</h3>
+                    <a
+                      href="https://simpleoscharlsz.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    A web-based terminal simulator using React + TypeScript, supporting basic system commands.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">
+                      React
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+                      TypeScript
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                      Terminal Simulator
+                    </span>
+                  </div>
                 </div>
               </div>
 
