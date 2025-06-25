@@ -156,6 +156,41 @@ function App() {
             <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8 animate-fade-in">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               
+              {/* HRG Soluciones Project */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src="/{ED4F2EA9-2112-4E15-9DFE-5C901ADA7EE2}.png" 
+                    alt="HRG Soluciones Website Screenshot"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white">HRG Soluciones S.A.S</h3>
+                    <a
+                      href="https://hrgsoluciones.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    >
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    HRG Soluciones S.A.S company website featuring electrical, construction, and maintenance services.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-sm rounded-full">
+                      Corporate Website
+                    </span>
+                    <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+                      Professional Services
+                    </span>
+                  </div>
+                </div>
+              </div>
+
               {/* Tera Studios Project */}
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
                 <div className="h-48 overflow-hidden">
