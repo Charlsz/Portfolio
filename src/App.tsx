@@ -54,11 +54,13 @@ function App() {
               Carlos Andrés Galvis Pájaro
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 animate-slide-up">
-              FullStack Developer & AI Enthusiast
+              Software Engineering Student
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-fade-in">
-              I'm a passionate and creative person with expertise in web development and AI training.
-              Focused on problem-solving, continuous learning, and adapting to dynamic environments.
+              I'm a Systems Engineering student with experience in web development, especially using HTML, CSS, and JavaScript. I enjoy creating accessible, functional, and well-designed websites. I'm passionate about learning new technologies, collaborating in teams, and solving problems creatively.
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-fade-in">
+              My interest in astronomy goes back many years, and today, computer vision represents a new frontier that inspires me to explore how technology can see and understand the world.
             </p>
             <div className="flex justify-center space-x-6 animate-bounce-in">
               <a
