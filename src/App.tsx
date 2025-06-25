@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { Code2, Github, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
 import CodeFlow from './components/CodeFlow';
 import Navbar from './components/Navbar';
 
@@ -154,11 +154,108 @@ function App() {
         <section id="projects" className="py-20 transform transition-all duration-500">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8 animate-fade-in">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              
+              {/* Tera Studios Project */}
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Coming Soon</h3>
-                <p className="text-gray-600 dark:text-gray-400">Project showcase under construction.</p>
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Tera Studios</h3>
+                  <a
+                    href="https://terastudios.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <ExternalLink className="h-5 w-5" />
+                  </a>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Tera Studios company website featuring modern design and professional presentation.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+                    Web Development
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
+                    Company Website
+                  </span>
+                </div>
               </div>
+
+              {/* SimpleOS Project */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">SimpleOS</h3>
+                  <a
+                    href="https://simpleoscharlsz.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <ExternalLink className="h-5 w-5" />
+                  </a>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  A web-based terminal simulator using React + TypeScript, supporting basic system commands.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">
+                    React
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+                    TypeScript
+                  </span>
+                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm rounded-full">
+                    Terminal Simulator
+                  </span>
+                </div>
+              </div>
+
+              {/* Climate App Project */}
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform transition-all duration-300 hover:scale-[1.05] hover:shadow-xl">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white">Climate App</h3>
+                  <a
+                    href="https://github.com/Charlsz/Climate_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
+                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Web application that estimates temperature anomalies based on CO2 levels using a machine learning model.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-sm rounded-full">
+                    Machine Learning
+                  </span>
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
+                    Climate Analysis
+                  </span>
+                  <span className="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-sm rounded-full">
+                    Data Science
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* GitHub Link Section */}
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700 rounded-lg shadow-md p-6 text-center transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+              <p className="text-gray-700 dark:text-gray-300 mb-4 text-lg">
+                To see more of my projects, feel free to check out my GitHub profile :)
+              </p>
+              <a
+                href="https://github.com/Charlsz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              >
+                <Github className="h-5 w-5" />
+                <span className="font-semibold">Visit GitHub Profile</span>
+                <ExternalLink className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </section>
