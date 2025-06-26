@@ -365,7 +365,6 @@ function App() {
                 <div className="flex items-center justify-between p-6 bg-gray-50 dark:bg-gray-700 rounded-lg transform transition-all duration-300 hover:scale-[1.02]">
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Resume (English)</h3>
-                    <p className="text-gray-600 dark:text-gray-400">Professional resume in English</p>
                   </div>
                   <a
                     href="/Resume_Carlos_Galvis.pdf"
@@ -381,7 +380,6 @@ function App() {
                 <div className="flex items-center justify-between p-6 bg-gray-50 dark:bg-gray-700 rounded-lg transform transition-all duration-300 hover:scale-[1.02]">
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Hoja de vida (Español)</h3>
-                    <p className="text-gray-600 dark:text-gray-400">Hoja de vida profesional en español</p>
                   </div>
                   <a
                     href="/Hoja_de_vida_Carlos_Galvis.pdf"
