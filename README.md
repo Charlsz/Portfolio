@@ -1,3 +1,3 @@
-# Mi Portafolio
+# My Portfolio
 
-Puedes verlo en línea aquí: [https://charlsz.netlify.app/](https://charlsz.netlify.app/)
+You can view it online here: [https://charlsz.netlify.app/](https://charlsz.netlify.app/)
