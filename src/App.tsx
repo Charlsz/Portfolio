@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Github, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
+import { Code2, Github, Linkedin, Mail, Phone, ExternalLink, Download } from 'lucide-react';
 import CodeFlow from './components/CodeFlow';
 import Navbar from './components/Navbar';
 
@@ -346,6 +346,53 @@ function App() {
                 <span className="font-semibold">Visit GitHub Profile</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Resume / Hoja de vida Section */}
+        <section id="resume" className="py-20 transform transition-all duration-500">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-8 animate-fade-in">Resume / Hoja de vida</h2>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+              <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg">
+                Here you can download my resume in the language of your choice:
+              </p>
+              
+              <div className="space-y-6">
+                {/* English Resume */}
+                <div className="flex items-center justify-between p-6 bg-gray-50 dark:bg-gray-700 rounded-lg transform transition-all duration-300 hover:scale-[1.02]">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Resume (English)</h3>
+                    <p className="text-gray-600 dark:text-gray-400">Professional resume in English</p>
+                  </div>
+                  <a
+                    href="/Resume_Carlos_Galvis.pdf"
+                    download="Resume_Carlos_Galvis.pdf"
+                    className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Download className="h-5 w-5" />
+                    <span className="font-semibold">Download PDF</span>
+                  </a>
+                </div>
+
+                {/* Spanish Resume */}
+                <div className="flex items-center justify-between p-6 bg-gray-50 dark:bg-gray-700 rounded-lg transform transition-all duration-300 hover:scale-[1.02]">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">Hoja de vida (Español)</h3>
+                    <p className="text-gray-600 dark:text-gray-400">Hoja de vida profesional en español</p>
+                  </div>
+                  <a
+                    href="/Hoja_de_vida_Carlos_Galvis.pdf"
+                    download="Hoja_de_vida_Carlos_Galvis.pdf"
+                    className="inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Download className="h-5 w-5" />
+                    <span className="font-semibold">Descargar PDF</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
