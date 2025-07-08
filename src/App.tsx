@@ -251,7 +251,7 @@ function App() {
                 <ProjectCard
                   title="SVG Half-tone Filter"
                   description="Interactive SVG filter application that applies half-tone effects to images with real-time preview."
-                  image="/{93C62C45-58AE-4D62-8AC8-E9A4FABCB04F}.png"
+                  image="/{B36547E7-5BCC-4201-B0D4-E5CC7C13B1C0}.png"
                   liveUrl="https://image-svg-filter.netlify.app/"
                   tags={["SVG", "Image Processing", "Interactive Design"]}
                   delay={400}
@@ -263,7 +263,7 @@ function App() {
                 <ProjectCard
                   title="World Time Website"
                   description="Beautiful world clock application displaying time zones from major cities around the globe with live updates."
-                  image="/{BE09A832-5AFC-435B-9D81-B636FB1DF888}.png"
+                  image="/{ED4F2EA9-2112-4E15-9DFE-5C901ADA7EE2}.png"
                   liveUrl="https://times-zones-world.netlify.app/"
                   tags={["Time Zones", "Real-time Data", "Global Interface"]}
                   delay={500}
