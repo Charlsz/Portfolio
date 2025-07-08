@@ -23,7 +23,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+    setImageError(false);
+  };
+
+  const handleImageError = () => {
+    setImageLoaded(false);
+    setImageError(true);
+    console.error(`Failed to load image for project "${title}":`, image);
+  };
   return (
     <div
       className="group bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
@@ -34,12 +45,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {image && (
         <div className="relative h-48 overflow-hidden">
           <div
-            className={`absolute inset-0 bg-gray-200 dark:bg-gray-700 transition-opacity duration-300 ${
+            className={`absolute inset-0 transition-opacity duration-300 ${
               imageLoaded ? 'opacity-0' : 'opacity-100'
             }`}
           >
-            <div className="flex items-center justify-center h-full">
-              <div className="w-8 h-8 border-2 border-gray-400 border-t-transparent rounded-full animate-spin" />
+            <div className={`flex items-center justify-center h-full ${
+              imageError ? 'bg-red-100 dark:bg-red-900' : 'bg-gray-200 dark:bg-gray-700'
+            }`}>
+              {imageError ? (
+                <div className="text-center p-4">
+                  <div className="text-red-500 dark:text-red-400 mb-2">
+                    <svg className="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-red-600 dark:text-red-400">Image failed to load</p>
+                  <p className="text-xs text-red-500 dark:text-red-500 mt-1 break-all">{image}</p>
+                </div>
+              ) : (
+                <div className="w-8 h-8 border-2 border-gray-400 border-t-transparent rounded-full animate-spin" />
+              )}
             </div>
           </div>
           <img
@@ -47,8 +72,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             alt={`${title} screenshot`}
             className={`w-full h-full object-cover transition-all duration-500 ${
               isHovered ? 'scale-110' : 'scale-100'
-            } ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-            onLoad={() => setImageLoaded(true)}
+            } ${imageLoaded && !imageError ? 'opacity-100' : 'opacity-0'}`}
+            onLoad={handleImageLoad}
+            onError={handleImageError}
             loading="lazy"
           />
           <div
