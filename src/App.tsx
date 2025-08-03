@@ -586,8 +586,9 @@ function App() {
                     <Grid item xs={12} sm={6} key={index}>
                       <MaterialSection animation="fade" delay={delay}>
                         <Card
-                          elevation={1}
                           sx={{
+                            textDecoration: 'none',
+                            color: 'inherit',
                             p: 3,
                             '&:hover': {
                               backgroundColor: 'rgba(33, 150, 243, 0.05)',
@@ -596,11 +597,6 @@ function App() {
                             transition: 'all 0.3s ease-in-out',
                             cursor: 'pointer',
                           }}
-                          component="a"
-                          href={href}
-                          target={href.startsWith('http') ? '_blank' : undefined}
-                          rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          sx={{ textDecoration: 'none', color: 'inherit' }}
                         >
                           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                             <Icon color="primary" />
