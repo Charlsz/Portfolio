@@ -1,5 +1,5 @@
 import React, { memo, useState, useCallback, forwardRef } from 'react';
-import { LucideIcon } from 'lucide-react';
+import { DivideIcon as LucideIcon } from 'lucide-react';
 
 interface InputProps {
   label?: string;
