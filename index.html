@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Galvis - Fullstack Developer y estudiante de Ingeniería de Sistemas. Especializado en desarrollo web, programación creativa y entrenamiento de IA.">
+    <meta name="keywords" content="Carlos Galvis, Fullstack Developer, React, JavaScript, Python, Desarrollo Web, Ingeniería de Sistemas">
+    <meta name="author" content="Carlos Galvis">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Carlos Galvis - Fullstack Developer">
+    <meta property="og:description" content="Desarrollador Fullstack especializado en crear experiencias digitales innovadoras y funcionales.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://charlsz.netlify.app/">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Galvis - Fullstack Developer">
+    <meta name="twitter:description" content="Desarrollador Fullstack especializado en crear experiencias digitales innovadoras y funcionales.">
+    
+    <title>Carlos Galvis - Fullstack Developer</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Carlos Galvis",
+        "jobTitle": "Fullstack Developer",
+        "url": "https://charlsz.netlify.app/",
+        "sameAs": [
+            "https://github.com/Charlsz",
+            "https://www.linkedin.com/in/cgalvisp/"
+        ],
+        "email": "cgalvis21_@hotmail.com",
+        "telephone": "+573166610293",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Colombia"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="dark-theme">
+    <!-- Header Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navegación principal">
+            <div class="nav__container">
+                <a href="#home" class="nav__logo" aria-label="Ir al inicio">
+                    <span class="nav__logo-text">CG</span>
+                </a>
+                
+                <ul class="nav__menu" role="menubar">
+                    <li class="nav__item" role="none">
+                        <a href="#home" class="nav__link" role="menuitem">Inicio</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#about" class="nav__link" role="menuitem">Sobre mí</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#projects" class="nav__link" role="menuitem">Proyectos</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#skills" class="nav__link" role="menuitem">Habilidades</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#experience" class="nav__link" role="menuitem">Experiencia</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#contact" class="nav__link" role="menuitem">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__controls">
+                    <button class="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+                        <span class="theme-toggle__icon">🌙</span>
+                    </button>
+                    <button class="nav__toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" role="banner">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__name">Carlos Galvis</span>
+                        <span class="hero__role">Fullstack Developer</span>
+                        <span class="hero__subtitle">Systems & Computer Engineering Student</span>
+                    </h1>
+                    
+                    <p class="hero__description">
+                        Hey! I'm Carlos Galvis, an engineering student with a multidisciplinary vision and a strong inclination toward technology, design, and the creation of meaningful experiences. I'm passionate about developing functional, visual, and innovative solutions.
+                    </p>
+                    
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">Ver Proyectos</a>
+                        <a href="#contact" class="btn btn--secondary">Contactar</a>
+                    </div>
+                    
+                    <div class="hero__social">
+                        <a href="https://github.com/Charlsz" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cgalvisp/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:cgalvis21_@hotmail.com" class="social-link" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <div class="hero__avatar">
+                        <div class="avatar-placeholder">CG</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#about" class="scroll-indicator" aria-label="Desplazarse hacia abajo">
+                    <span class="scroll-indicator__text">Scroll</span>
+                    <span class="scroll-indicator__arrow">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title">Sobre mí</h2>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <p class="about__paragraph">
+                            I'm a software developer and engineering student currently based in Colombia, specializing in fullstack web development, creative programming, and AI training. I enjoy building engaging and efficient digital products that solve real-world problems.
+                        </p>
+                        
+                        <p class="about__paragraph">
+                            With a strong technical foundation and a creative mindset, I aim to deliver high-impact experiences that are both functional and visually appealing. I combine technical depth with visual design skills, constantly learning and adapting to new tools and environments.
+                        </p>
+                        
+                        <div class="about__strengths">
+                            <h3 class="about__strengths-title">Core Strengths:</h3>
+                            <ul class="strengths-list">
+                                <li class="strengths-list__item">Problem solving and logical thinking</li>
+                                <li class="strengths-list__item">Cross-functional communication</li>
+                                <li class="strengths-list__item">Rapid prototyping and creative experimentation</li>
+                                <li class="strengths-list__item">Clean and responsive web interfaces</li>
+                                <li class="strengths-list__item">AI content analysis and optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="about__stats">
+                        <div class="stat-card">
+                            <span class="stat-card__number">3+</span>
+                            <span class="stat-card__label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__number">15+</span>
+                            <span class="stat-card__label">Proyectos completados</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-card__number">100%</span>
+                            <span class="stat-card__label">Satisfacción del cliente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section__title">Proyectos</h2>
+                
+                <div class="projects__filters">
+                    <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="game">Juegos</button>
+                    <button class="filter-btn" data-filter="tool">Herramientas</button>
+                </div>
+                
+                <div class="projects__grid">
+                    <article class="project-card" data-category="game">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">🎮</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Pixel Runner</h3>
+                            <p class="project-card__description">
+                                A web-based side-scrolling runner game made with pure JavaScript, HTML, and CSS. Lightweight and fully interactive.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://pixelrunnergame.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">🏢</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">HRG Soluciones S.A.S</h3>
+                            <p class="project-card__description">
+                                Corporate website for a tech service company. Built with React and Tailwind CSS, with responsive layout and WhatsApp integration.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://hrgsoluciones.com/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">🎨</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Tera Studios</h3>
+                            <p class="project-card__description">
+                                Modern landing page designed for a visual design and technology brand. Simple, bold, and functional design.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Design</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://terastudios.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="tool">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">💻</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">SimpleOS</h3>
+                            <p class="project-card__description">
+                                Browser-based mock operating system that simulates file windows, commands, and interactive UI elements.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://simpleoscharlsz.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="tool">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">🖼️</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">SVG Half-tone Filter</h3>
+                            <p class="project-card__description">
+                                Interactive visual tool that converts images into halftone-style patterns using SVG filters and canvas.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">SVG</span>
+                                <span class="tech-tag">Canvas</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://image-svg-filter.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <div class="project-placeholder">🌍</div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">World Time Website</h3>
+                            <p class="project-card__description">
+                                Elegant time zone app that displays real-time clocks from multiple cities around the world.
+                            </p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://times-zones-world.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    Ver Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title">Habilidades Técnicas</h2>
+                
+                <div class="skills__categories">
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Lenguajes de Programación</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🐍</div>
+                                <span class="skill-item__name">Python</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">⚡</div>
+                                <span class="skill-item__name">JavaScript</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">☕</div>
+                                <span class="skill-item__name">Java</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🍎</div>
+                                <span class="skill-item__name">Swift</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Desarrollo Web</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🌐</div>
+                                <span class="skill-item__name">HTML/CSS</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">⚛️</div>
+                                <span class="skill-item__name">React</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🎨</div>
+                                <span class="skill-item__name">Tailwind CSS</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">📱</div>
+                                <span class="skill-item__name">Responsive Design</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Backend y Bases de Datos</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🔥</div>
+                                <span class="skill-item__name">Firebase</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🍃</div>
+                                <span class="skill-item__name">MongoDB</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🗄️</div>
+                                <span class="skill-item__name">SQL</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 82%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category__title">Herramientas y Tecnologías</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🔧</div>
+                                <span class="skill-item__name">Git/GitHub</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🚀</div>
+                                <span class="skill-item__name">Netlify</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🎨</div>
+                                <span class="skill-item__name">Figma</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 78%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item__icon">🔌</div>
+                                <span class="skill-item__name">REST APIs</span>
+                                <div class="skill-item__level">
+                                    <div class="skill-bar">
+                                        <div class="skill-bar__fill" style="width: 83%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section__title">Experiencia</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">Fullstack Developer</h3>
+                                <span class="timeline-item__company">HRG Soluciones S.A.S</span>
+                                <span class="timeline-item__period">Enero 2024 – Diciembre 2024</span>
+                                <span class="timeline-item__location">Cartagena, Colombia</span>
+                            </div>
+                            <ul class="timeline-item__achievements">
+                                <li>Diseñé, desarrollé y mantuve sitios web responsivos y optimizados usando React, HTML, CSS y Tailwind</li>
+                                <li>Integré funcionalidades backend y mejoré el rendimiento del sitio a través de conexiones API</li>
+                                <li>Colaboré con clientes y equipos de diseño para construir soluciones personalizadas</li>
+                                <li>Apliqué mejores prácticas de SEO y estándares de accesibilidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">AI Trainer – LATAM Spanish Writer</h3>
+                                <span class="timeline-item__company">Outlier</span>
+                                <span class="timeline-item__period">Junio 2024 – Noviembre 2024</span>
+                                <span class="timeline-item__location">Remoto</span>
+                            </div>
+                            <ul class="timeline-item__achievements">
+                                <li>Creé, edité y evalué contenido en español para entrenar y optimizar modelos de lenguaje IA</li>
+                                <li>Mejoré la coherencia lingüística, claridad y relevancia en texto generado por IA</li>
+                                <li>Analicé grandes volúmenes de texto para afinar el comportamiento del modelo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-item__marker"></div>
+                        <div class="timeline-item__content">
+                            <div class="timeline-item__header">
+                                <h3 class="timeline-item__title">Customer Support Agent</h3>
+                                <span class="timeline-item__company">Teleperformance</span>
+                                <span class="timeline-item__period">Diciembre 2024 – Enero 2025</span>
+                                <span class="timeline-item__location">Barranquilla, Colombia</span>
+                            </div>
+                            <ul class="timeline-item__achievements">
+                                <li>Gestioné solicitudes de clientes a través de varios canales</li>
+                                <li>Aseguré la satisfacción del cliente abordando preocupaciones y brindando orientación útil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education">
+                    <h3 class="education__title">Educación</h3>
+                    <div class="education-item">
+                        <div class="education-item__content">
+                            <h4 class="education-item__degree">Ingeniería de Sistemas y Computación</h4>
+                            <span class="education-item__school">Universidad del Norte</span>
+                            <span class="education-item__period">Junio 2021 – Presente</span>
+                            <span class="education-item__location">Barranquilla, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title">Contacto</h2>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">¡Hablemos!</h3>
+                        <p class="contact__description">
+                            Estoy siempre interesado en nuevas oportunidades y proyectos emocionantes. 
+                            No dudes en contactarme si tienes alguna pregunta o propuesta.
+                        </p>
+                        
+                        <div class="contact__details">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📧</div>
+                                <div class="contact-item__content">
+                                    <span class="contact-item__label">Email</span>
+                                    <a href="mailto:cgalvis21_@hotmail.com" class="contact-item__value">cgalvis21_@hotmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📱</div>
+                                <div class="contact-item__content">
+                                    <span class="contact-item__label">Teléfono</span>
+                                    <a href="tel:+573166610293" class="contact-item__value">+57 316 661 0293</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-item__icon">📍</div>
+                                <div class="contact-item__content">
+                                    <span class="contact-item__label">Ubicación</span>
+                                    <span class="contact-item__value">Colombia</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__social">
+                            <a href="https://github.com/Charlsz" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/cgalvisp/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre *</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-describedby="email-error">
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required aria-describedby="subject-error">
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required aria-describedby="message-error"></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">
+                            <span class="btn__text">Enviar Mensaje</span>
+                            <span class="btn__loading">Enviando...</span>
+                        </button>
+                        
+                        <div class="form-success" id="form-success">
+                            ¡Mensaje enviado exitosamente! Te responderé pronto.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">
+                    © 2025 Carlos Galvis. Diseñado y desarrollado con ❤️
+                </p>
+                <div class="footer__links">
+                    <a href="#home" class="footer__link">Inicio</a>
+                    <a href="#about" class="footer__link">Sobre mí</a>
+                    <a href="#projects" class="footer__link">Proyectos</a>
+                    <a href="#contact" class="footer__link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p class="loading-text">Cargando...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
