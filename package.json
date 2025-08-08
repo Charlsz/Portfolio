@@ -1,0 +1,26 @@
+{
+  "name": "carlos-galvis-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Carlos Galvis - Fullstack Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "developer",
+    "web",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Carlos Galvis <cgalvis21_@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "type": "module"
+}
