@@ -32,10 +32,11 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -182,6 +183,9 @@ body {
     font-weight: 500;
     transition: all 0.3s ease;
     border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .link-button:hover {
@@ -263,6 +267,7 @@ section {
 
 .strengths {
     margin-top: 40px;
+    margin-bottom: 64px;
 }
 
 .strengths h3 {
@@ -291,6 +296,19 @@ section {
     color: #000;
     font-weight: 700;
     font-size: 20px;
+}
+
+.subsection-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.experience-section {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Projects Section */
@@ -378,13 +396,8 @@ section {
 }
 
 /* Experience Section */
-.experience {
-    background-color: #f8f9fa;
-}
-
 .timeline {
-    max-width: 800px;
-    margin: 0 auto 64px;
+    margin: 0 0 64px 0;
     position: relative;
 }
 
@@ -532,6 +545,10 @@ section {
     font-weight: 600;
     color: #000;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
 }
 
 .contact-item a {
